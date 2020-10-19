@@ -11,16 +11,16 @@
                 indeterminate
             ></v-progress-circular>
         </div>
-        <Npc v-if="isViewing && !isLoading"/>
+        <Npa v-if="isViewing && !isLoading"/>
     </v-container>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import Disclaimer from './wrapper/Disclaimer.vue'
-import Npc from './views/npc/Npc.vue'
+import Npa from './views/npa/Npa.vue'
 @Component({
-    components: {Disclaimer,Npc}
+    components: {Disclaimer,Npa}
 })
 export default class Main extends Vue{
     private isViewing = false;
